@@ -1,0 +1,36 @@
+/*
+
+Theme Name: Dwell-Custom
+Author: Alex Horton at Elevate United
+Author URI: https://alexhorton.co
+Description: Custom redesign for Dwell Music City Real Estate group
+Version: 2.0
+License: MIT
+Text Domain: dwell-custom
+
+*/
+nav {
+  border: 1px solid #5f7470; }
+  nav .nav-wrap .logo-header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    nav .nav-wrap .logo-header h1 {
+      margin: 0 0 0 50px; }
+  nav .nav-wrap .nav-links {
+    border: 1px solid #579bb2;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    nav .nav-wrap .nav-links .nav-link-page {
+      margin: 10px; }
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
