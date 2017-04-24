@@ -28,6 +28,9 @@ nav {
     nav .nav-wrap .nav-links .nav-link-page {
       margin: 10px; }
 
+.homepage {
+  min-height: 100vh; }
+
 body {
   padding: 0;
   margin: 0;
