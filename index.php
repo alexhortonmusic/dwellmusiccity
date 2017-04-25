@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div id="content">
-
+  <p>IMAGE HEAVY BLOG LOOK</p>
+  <p>Use small blurbs for each post on main page</p>
+  
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 

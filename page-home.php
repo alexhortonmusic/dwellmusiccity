@@ -35,6 +35,10 @@ get_header();
   <div class="insta-feed">
     <?php echo do_shortcode('[instagram-feed]') ?>
   </div>
+
+  <div class="map-wrap">
+    <p>Interactive map with links to new page about neighborhood</p>
+  </div>
 </div>
 
 <?php get_footer(); ?>
