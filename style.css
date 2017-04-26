@@ -82,6 +82,32 @@ nav {
     width: 90%;
     margin: 0 auto; }
 
+#content .blogpage {
+  padding-top: 30px; }
+  #content .blogpage .posts .fullpost-multi {
+    background-size: cover;
+    border: 1px solid black;
+    height: 300px;
+    width: 85%;
+    margin: 0 auto 50px;
+    overflow: hidden; }
+    #content .blogpage .posts .fullpost-multi .postheader {
+      padding: 0 15px; }
+      #content .blogpage .posts .fullpost-multi .postheader h2 {
+        text-align: left;
+        margin-bottom: 0; }
+        #content .blogpage .posts .fullpost-multi .postheader h2 a {
+          color: white; }
+      #content .blogpage .posts .fullpost-multi .postheader small {
+        color: white; }
+    #content .blogpage .posts .fullpost-multi .multi-entry p {
+      color: white;
+      padding: 0 15px; }
+  #content .blogpage .posts .fullpost-single {
+    min-height: 300px;
+    width: 85%;
+    margin: 0 auto; }
+
 * {
   box-sizing: border-box; }
 
