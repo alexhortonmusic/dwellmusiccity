@@ -29,6 +29,18 @@
         'after_title'   => '</h4>'
       ));
 
+      register_sidebar(array(
+        'name' => 'Search Page',
+        'id'   => 'search_page',
+        'description'   => 'This area is for the Search Page widgets',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>'
+      ));
+
     }
+
+    // add_theme_support( 'post-thumbnails' );
 
  ?>

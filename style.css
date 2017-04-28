@@ -30,6 +30,24 @@ nav {
 
 .homepage {
   min-height: 100vh; }
+  .homepage .splash {
+    background-color: #5f7470;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .homepage .splash .splash-logo img {
+      display: block;
+      width: 300px;
+      margin: 0 auto; }
+    .homepage .splash .tagline p {
+      color: #e0e2db;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto; }
+    .homepage .splash .tagline p:first-child {
+      font-size: 2.5rem;
+      margin-bottom: 20px; }
   .homepage .idx-video-wrap {
     padding-top: 20px;
     margin-bottom: 65px;
@@ -80,6 +98,62 @@ nav {
   .aboutpage .bios .bio-person .img img {
     display: block;
     width: 90%;
+    margin: 0 auto; }
+
+.searchpage .featured-listings {
+  width: 80%;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .searchpage .featured-listings .listing {
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 20px; }
+    .searchpage .featured-listings .listing p {
+      color: white; }
+  .searchpage .featured-listings .listing-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg"); }
+  .searchpage .featured-listings .listing-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse2.jpg"); }
+  .searchpage .featured-listings .listing-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse3.jpg"); }
+.searchpage .idx-box {
+  margin: 0 25px 40px; }
+  .searchpage .idx-box .widget_ihomefinderquicksearchwidget {
+    border: 1px solid red;
+    padding: 10px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 420px;
+    margin: 0 auto; }
+    .searchpage .idx-box .widget_ihomefinderquicksearchwidget h4 {
+      text-align: center; }
+
+#content .blogpage {
+  padding-top: 30px; }
+  #content .blogpage .posts .fullpost-multi {
+    background-size: cover;
+    border: 1px solid black;
+    height: 300px;
+    width: 85%;
+    margin: 0 auto 50px;
+    overflow: hidden; }
+    #content .blogpage .posts .fullpost-multi .postheader {
+      padding: 0 15px; }
+      #content .blogpage .posts .fullpost-multi .postheader h2 {
+        text-align: left;
+        margin-bottom: 0; }
+        #content .blogpage .posts .fullpost-multi .postheader h2 a {
+          color: white; }
+      #content .blogpage .posts .fullpost-multi .postheader small {
+        color: white; }
+    #content .blogpage .posts .fullpost-multi .multi-entry p {
+      color: white;
+      padding: 0 15px; }
+  #content .blogpage .posts .fullpost-single {
+    min-height: 300px;
+    width: 85%;
     margin: 0 auto; }
 
 * {

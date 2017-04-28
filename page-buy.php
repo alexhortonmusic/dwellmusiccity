@@ -13,4 +13,8 @@ get_header();
 <p>PDF of roadmap</p>
 <p>info blurb, Call to action to buy</p>
 
+<img src="http://localhost/dwell-local/wp-content/uploads/2017/04/dwell_buyer_roadmap.jpg" alt="Seller Roadmap PDF">
+
+<!-- make link for pdf to allow download ___ http://localhost/dwell-local/wp-content/uploads/2017/04/dwell_buyer_roadmap.pdf -->
+
 <?php get_footer(); ?>

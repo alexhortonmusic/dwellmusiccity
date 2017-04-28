@@ -20,7 +20,12 @@ Text Domain: dwell-custom
 @import "header";
 @import "homepage";
 @import "aboutpage";
+@import "searchpage";
+@import "blogpage";
 @import "footer";
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Arvo', serif;
 
 * {
   box-sizing: border-box;
