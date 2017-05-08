@@ -9,7 +9,6 @@
 get_header();
 ?>
 
-<h1>ABOUT PAGE</h1>
 <!-- About Dwell, and then Bios -->
 <div class="aboutpage">
 
