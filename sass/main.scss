@@ -15,6 +15,7 @@ Text Domain: dwell-custom
 // $pastelgray: #d2d4c8;
 // $ashgrey: #b8bdb5;
 // $nickel: #5f7470;
+// $offwhite: #e8eae4
 
 @import "palette";
 @import "header";
@@ -29,9 +30,12 @@ Text Domain: dwell-custom
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  background: $offwhite;
 }
