@@ -2,10 +2,19 @@
 
     function wpb_adding_scripts() {
 
-      wp_enqueue_script('dwell_js', get_template_directory_uri() . '/js/dwell-custom.js', array('jquery'),'04212017', true);
+      if ( is_page_template('page-about.php') ) {
+        wp_enqueue_script('dwell_js', get_template_directory_uri() . '/js/dwell-custom.js', array('jquery'),'04212017', true);
+      }
+
+      // logic stopped from running in js file, for now
+      wp_enqueue_script('dwell_hoods', get_template_directory_uri() . '/js/dwell-hoods.js', array('jquery'),'05102017', true);
 
     }
-    add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
+
+    // enqueues scripts
+    if( !is_admin() ) {
+      add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
+    }
 
     if (function_exists('register_sidebar')) {
 

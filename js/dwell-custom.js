@@ -1,7 +1,23 @@
+'use strict';
+
+// for hoods json
+// {
+//   "title": "",
+//   "main": "",
+//   "extra": "",
+//   "restaurants": [""],
+//   "rr-links": [""],
+//   "attractions": [""],
+//   "att-links": [""],
+//   "shopping": [""],
+//   "shop-links": [""],
+//   "housing": [""],
+//   "house-links": [""],
+//   "imgs": [""]
+// }
+
 
 (function($) {
-
-  console.log('TEST')
 
   // --------- dwell bios -------------- //
   let bioArr
@@ -68,9 +84,5 @@
     }
     bios.append(personalInfo)
   }
-
-
-
-
 
 })(jQuery)
