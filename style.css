@@ -154,8 +154,32 @@ nav {
 .page-hood {
   min-height: 100vh;
   border: 1px solid #6198b7; }
-  .page-hood .page-wrap .hood-info .extra-hide {
-    display: none; }
+  .page-hood .page-wrap {
+    width: 90%;
+    margin: 0 auto; }
+    .page-hood .page-wrap .hood-title {
+      padding-top: 30px;
+      margin-bottom: 20px; }
+      .page-hood .page-wrap .hood-title p {
+        font-family: "Arvo", serif;
+        text-align: center;
+        font-size: 2rem; }
+    .page-hood .page-wrap .hood-info {
+      margin-bottom: 30px; }
+      .page-hood .page-wrap .hood-info .main, .page-hood .page-wrap .hood-info .extra {
+        margin-bottom: 10px; }
+      .page-hood .page-wrap .hood-info .extra-hide {
+        display: none; }
+      .page-hood .page-wrap .hood-info .read-more, .page-hood .page-wrap .hood-info .read-less {
+        color: #6198b7;
+        text-decoration: underline;
+        text-align: right; }
+    .page-hood .page-wrap .hood-extras {
+      margin-bottom: 30px; }
+      .page-hood .page-wrap .hood-extras .restaurants p, .page-hood .page-wrap .hood-extras .attractions p, .page-hood .page-wrap .hood-extras .shopping p, .page-hood .page-wrap .hood-extras .housing p {
+        font-family: "Arvo", serif; }
+      .page-hood .page-wrap .hood-extras .restaurants div ul, .page-hood .page-wrap .hood-extras .attractions div ul, .page-hood .page-wrap .hood-extras .shopping div ul, .page-hood .page-wrap .hood-extras .housing div ul {
+        list-style: none; }
 
 .searchpage .featured-listings {
   width: 80%;
