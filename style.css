@@ -19,7 +19,7 @@ nav {
     nav .nav-wrap .logo-header h1 {
       margin: 0 0 0 50px; }
   nav .nav-wrap .nav-links {
-    border: 1px solid #579bb2;
+    border: 1px solid #6198b7;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -84,13 +84,11 @@ nav {
           width: 100%;
           height: 100%; }
   .homepage .testimonials {
-    border: 1px solid #579bb2;
+    border: 1px solid #6198b7;
     width: 85%;
     margin: 0 auto 50px; }
-  .homepage .map-wrap {
-    border: 1px solid #579bb2; }
-    .homepage .map-wrap p {
-      text-align: center; }
+  .homepage .map-wrap p {
+    text-align: center; }
 
 .aboutpage .bios .bio-person {
   width: 85%;
@@ -131,13 +129,13 @@ nav {
         color: #5f7470; }
       .aboutpage .bios .bio-person .info .contact .phone-email .phone a {
         margin-bottom: 0;
-        color: #579bb2; }
+        color: #6198b7; }
       .aboutpage .bios .bio-person .info .contact .phone-email .phone p {
         display: none; }
       @media screen and (min-width: 500px) {
         .aboutpage .bios .bio-person .info .contact .phone-email .phone p {
           display: block;
-          color: #579bb2; }
+          color: #6198b7; }
         .aboutpage .bios .bio-person .info .contact .phone-email .phone a {
           display: none; } }
     .aboutpage .bios .bio-person .info .contact .phone-email .email {
@@ -151,7 +149,13 @@ nav {
         margin-right: 5px;
         color: #5f7470; }
       .aboutpage .bios .bio-person .info .contact .phone-email .email a {
-        color: #579bb2; }
+        color: #6198b7; }
+
+.page-hood {
+  min-height: 100vh;
+  border: 1px solid #6198b7; }
+  .page-hood .page-wrap .hood-info .extra-hide {
+    display: none; }
 
 .searchpage .featured-listings {
   width: 80%;

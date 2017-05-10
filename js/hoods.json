@@ -1,0 +1,18 @@
+{
+  "hoods": {
+    "bellemeade": {
+      "title": "Belle Meade",
+      "main": "If luxurious living away from the hustle and bustle of downtown sounds like your cup of tea, then the city of Belle Meade may be for you. Just minutes from Green Hills and Midtown, the community is named for the Belle Meade Plantation, which encompassed over 5,000 acres from 1807 to 1904, when half of the area was purchased for residential development. Once known as the “Queen of Southern Plantations,” the mansion’s main grounds have been preserved as a museum, with guides in period dress leading visitors through the main house, dairy, stable,carriage house, winery and other outbuildings. The sprawling grounds are also a popular site for outdoor festivals throughout the year.",
+      "extra": "Living in Belle Meade places you in close proximity to plenty of fine dining—such as Sperry’s, serving exquisite beef and seafood for over 40 years—and antique shops, such as Spalding’s and the Belle Meade Shoppes. The retail district houses many upscale boutiques, spas, and fitness centers, and the residential areas are dotted with tree-lined parks, houses of worship, and high-quality schools. Other attractions include the recently-redesigned Belle Meade Country Club, Cheekwood Botanical Gardens and Museum of Art, and Percy Warner Park—a vast natural area with webs of hiking paths curving through beech, oak, and cedar forests. (And be sure to enjoy some good old-fashioned bluegrass at the Full Moon Pickin’ Parties that take place monthly from May through October at the Warner Park Equestrian Center, every Friday closest to full moon!)<br><br>Belle Meade’s real estate ranges widely from sumptuous multi-million dollar mansions, to mid-range estates and more affordable single family homes. Many of the Victorian and Georgian-style estates include 6-8 bedrooms and bathrooms, boasting columned porches, high ceilings, grand staircases, wide windows, spacious balconies, and sweeping lawns. The real estate combines historic architecture with modern amenities, and the community has a devoted neighborhood police patrol that enforces speed limits to ensure Belle Meade remains a lovely and peaceful place to live.",
+      "restaurants": ["Sperry’s", "Le Peep", "Michelangelo’s Pizza", "Sam’s Place", "Crumb de la Crumb", "Finezza Italian Bistro", "360 Bistro", "Something Special", "The Wine Chap"],
+      "rr-links": [""],
+      "attractions": ["Belle Meade Plantation", "Belle Meade Country Club", "Cheekwood Botanical Gardens and Museum of Art", "Edwin and Percy Warner Parks", "Iron Tribe Fitness", "Koko Fit Club of Belle Meade", "Swell Pilates Studio", "West Meade Swim and Tennis Club"],
+      "att-links": [""],
+      "shopping": ["Spalding", "The Belle Meade Shoppes", "Crazy Rae Music", "Phillips Toy Mart"],
+      "shop-links": [""],
+      "housing": ["Hillmeade Apartment Homes", "Valley Ridge Apartments"],
+      "house-links": [""],
+      "imgs": [""]
+    }
+  }
+}

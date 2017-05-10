@@ -1,7 +1,23 @@
+'use strict';
+
+// for hoods json
+// {
+//   "title": "",
+//   "main": "",
+//   "extra": "",
+//   "restaurants": [""],
+//   "rr-links": [""],
+//   "attractions": [""],
+//   "att-links": [""],
+//   "shopping": [""],
+//   "shop-links": [""],
+//   "housing": [""],
+//   "house-links": [""],
+//   "imgs": [""]
+// }
+
 
 (function($) {
-
-  console.log('TEST')
 
   // --------- dwell bios -------------- //
   let bioArr
@@ -69,8 +85,108 @@
     bios.append(personalInfo)
   }
 
+  // ------------ nashville neighborhoods ---------- //
+  $.ajax({
+    data: 'json',
+    url: 'http://localhost/dwell-local/wp-content/themes/dwell-custom/js/hoods.json'
+  })
+  .done(function(hoodObj) {
+    console.log('Work')
+    fillHoodTemplate(hoodObj.hoods)
+  })
+  .fail(function() {
+    console.log('FAIL')
+  })
 
+  const fillHoodTemplate = (hoods) => {
+    for(let hoodName in hoods) {
+      // grabs jQuery object
+      let grabHoodElement = $(`.${hoodName}`)
 
+      // grabs current page name
+      let currentPage = grabHoodElement[0].classList[1]
+      // hoodName and currentPage should be equal
 
+      let hood = hoods[hoodName]
+
+      let hoodTemplate =
+      `
+      <div class="page-wrap">
+        <div class="hood-title">
+          <p>${hood.title}</p>
+        </div>
+        <div class="hood-info">
+          <p class="main">${hood.main}</p>
+          <p class="extra extra-hide">${hood.extra}</p>
+          <p class='read-more'>Read more</p>
+        </div>
+        <div class="hood-extras">
+          <div class="restaurants">
+            <p>Restaurants</p>
+            <div>
+              <ul>
+      `
+      // loops through restaurants array
+      for(let i = 0; i < hood.restaurants.length; i++) {
+         hoodTemplate += `<li><a href='#'>${hood.restaurants[i]}</a></li>`
+      }
+
+      hoodTemplate +=
+      `
+              </ul>
+            </div>
+          </div>
+          <div class="attractions">
+            <p>Attractions</p>
+            <div>
+              <ul>
+      `
+      // loops through attractions array
+      for(let i = 0; i < hood.attractions.length; i++) {
+         hoodTemplate += `<li><a href='#'>${hood.attractions[i]}</a></li>`
+      }
+
+      hoodTemplate +=
+      `
+              </ul>
+            </div>
+          </div>
+          <div class="shopping">
+            <p>Shopping</p>
+            <div>
+              <ul>
+      `
+      // loops through attractions array
+      for(let i = 0; i < hood.shopping.length; i++) {
+         hoodTemplate += `<li><a href='#'>${hood.shopping[i]}</a></li>`
+      }
+
+      hoodTemplate +=
+      `
+              </ul>
+            </div>
+          </div>
+          <div class="housing">
+            <p>Housing</p>
+            <div>
+              <ul>
+      `
+      // loops through attractions array
+      for(let i = 0; i < hood.shopping.length; i++) {
+         hoodTemplate += `<li><a href='#'>${hood.shopping[i]}</a></li>`
+      }
+
+      hoodTemplate +=
+      `
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      `
+
+      grabHoodElement.append(hoodTemplate)
+    }
+  }
 
 })(jQuery)

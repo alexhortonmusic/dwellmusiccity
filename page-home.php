@@ -48,7 +48,7 @@ get_header();
   </div>
 
   <div class="map-wrap">
-    <p>Interactive map with links to new page about neighborhood</p>
+    <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
   </div>
 </div>
 
