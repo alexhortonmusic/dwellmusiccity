@@ -16,7 +16,7 @@
   <nav>
     <div class='nav-wrap'>
       <div class='logo-header'>
-        <h1>LOGO</h1>
+        <img src="http://localhost/dwell-local/wp-content/uploads/2017/05/Dwell-logo.png" alt="Dwell Logo">
       </div>
       <div class='nav-links'>
         <!-- mega-menu plugin -->

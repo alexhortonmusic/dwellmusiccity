@@ -1,0 +1,94 @@
+@import palette
+// $cadetblue
+// $gainsboro
+// $pastelgray
+// $ashgrey
+// $nickel
+// $offwhite
+
+.buypage
+
+  .blackbox
+    background-color: $cadetblue
+    min-height: 70px
+
+    .heading
+      color: $offwhite
+      font-family: 'Arvo', cursive
+      font-size: 1.7rem
+      text-align: center
+      padding-top: 20px
+      padding-bottom: 20px
+
+  .buy-hero
+    margin-bottom: 70px
+    // background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.2)), url('http://localhost/dwell-local/wp-content/uploads/2017/05/meeting.jpg')
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.2)), url('http://localhost/dwell-local/wp-content/uploads/2017/05/meeting-full.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 250px
+    background-position: cover
+
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    .hero-heading
+      font-size: 2rem
+      font-family: 'Arvo', cursive
+      text-align: center
+      margin-bottom: 50px
+
+
+    .buy-cta-wrap
+      margin-bottom: 20px
+
+
+      a
+        display: block
+        margin: 0 auto
+        text-decoration: none
+        max-width: 300px
+        // height: 50px
+
+        .buy-cta
+          margin: 0 auto
+          border: 2px solid $cadetblue
+          border-radius: 4px
+          font-weight: 400
+          width: 80%
+          max-width: 300px
+          // min-height: 50px
+          // background: #ffdd49
+          color: white
+          background: $cadetblue
+          display: flex
+          flex-direction: column
+          justify-content: center
+
+          p
+            padding: 12px
+            text-align: center
+
+        .buy-cta:hover, .buy-cta:active
+        color: red
+
+  .buy-blurb
+    width: 80%
+    margin: 0 auto 70px
+
+    p:first-child
+      text-align: center
+      font-family: 'Arvo', cursive
+      font-size: 1.5rem
+      margin-bottom: 25px
+
+    p:nth-child(2)
+
+  .buy-pdf
+    width: 90%
+    margin: 0 auto
+    border: 1px solid $nickel
+
+    img
+      width: 100%

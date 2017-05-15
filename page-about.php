@@ -18,8 +18,11 @@ get_header();
     </p>
   </div>
 
-  <div class="bios">
+  <div class="about-team">
+    <p class='title'>The Dwell Team</p>
+    <div class="bios">
 
+    </div>
   </div>
 </div>
 

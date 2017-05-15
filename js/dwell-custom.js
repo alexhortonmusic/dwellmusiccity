@@ -85,4 +85,17 @@
     bios.append(personalInfo)
   }
 
+  // ----- Calls to Actions buttons -----
+
+  $('.cta-home').hover(
+    function() {
+      console.log('on it')
+      $('.cta-home a').addClass('cta-home-hover')
+    },
+    function() {
+      console.log('off it')
+      $('.cta-home a').removeClass('cta-home-hover')
+    }
+  )
+
 })(jQuery)

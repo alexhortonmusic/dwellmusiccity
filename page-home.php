@@ -12,12 +12,11 @@ get_header();
 <div class="homepage">
   <!-- splash-area -->
   <div class="splash">
-    <div class="splash-logo">
-      <img src="http://localhost/dwell-local/wp-content/uploads/2017/04/Dwell_Village.png" alt="Dwell Logo">
-    </div>
     <div class="tagline">
-      <p>Please Buy a House</p>
-      <p>Do it with us and it'll be fun</p>
+      <p>Your Nashville Real Estate Specialists</p>
+    </div>
+    <div class="cta-home">
+      <a href="#">Take the First Step</a>
     </div>
   </div>
 

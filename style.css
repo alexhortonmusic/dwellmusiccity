@@ -10,28 +10,33 @@ Text Domain: dwell-custom
 
 */
 nav {
-  border: 1px solid #5f7470; }
-  nav .nav-wrap .logo-header {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    nav .nav-wrap .logo-header h1 {
-      margin: 0 0 0 50px; }
-  nav .nav-wrap .nav-links {
-    border: 1px solid #6198b7;
-    padding: 10px;
+  background-color: #6198b7; }
+  nav .nav-wrap {
+    padding: 20px 5px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    nav .nav-wrap .nav-links .nav-link-page {
-      margin: 10px; }
+    justify-content: space-between; }
+    nav .nav-wrap .logo-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      nav .nav-wrap .logo-header img {
+        width: 200px;
+        margin: 0 auto; }
+    nav .nav-wrap .nav-links {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      nav .nav-wrap .nav-links .nav-link-page {
+        margin: 10px; }
 
 .homepage {
   min-height: 100vh; }
   .homepage .splash {
-    background-color: #5f7470;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/05/batman-nashville.jpg");
+    background-size: cover;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -44,10 +49,35 @@ nav {
       color: #e0e2db;
       text-align: center;
       width: 70%;
-      margin: 0 auto; }
-    .homepage .splash .tagline p:first-child {
-      font-size: 2.5rem;
-      margin-bottom: 20px; }
+      margin: 0 auto;
+      font-family: "Arvo", cursive;
+      font-size: 2rem; }
+    .homepage .splash .cta-home {
+      background-color: #f69a2b;
+      width: 250px;
+      height: 45px;
+      margin: 0 auto 30px;
+      border: 2px solid #f0f1ee;
+      border-radius: 20px;
+      transition: 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .homepage .splash .cta-home a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 100%;
+        color: #f0f1ee;
+        font-size: 1.2rem; }
+    .homepage .splash .cta-home:hover,
+    .homepage .splash .cta-home:active {
+      background-color: #f0f1ee;
+      transition: 0.2s; }
+      .homepage .splash .cta-home:hover .cta-home-hover,
+      .homepage .splash .cta-home:active .cta-home-hover {
+        color: #f69a2b;
+        transition: 0.2s; }
   .homepage .idx-video-wrap {
     padding-top: 20px;
     margin-bottom: 65px;
@@ -90,65 +120,69 @@ nav {
   .homepage .map-wrap p {
     text-align: center; }
 
-.aboutpage .bios .bio-person {
+.aboutpage .about-team .title {
+  font-family: "Arvo", cursive;
+  text-align: center; }
+.aboutpage .about-team .bios .bio-person {
   width: 85%;
   margin: 50px auto; }
-  .aboutpage .bios .bio-person .img {
+  .aboutpage .about-team .bios .bio-person .img {
     margin-bottom: 20px; }
-    .aboutpage .bios .bio-person .img img {
+    .aboutpage .about-team .bios .bio-person .img img {
       border-radius: 50%;
       display: block;
       width: 70%;
       margin: 0 auto; }
-  .aboutpage .bios .bio-person .info .name {
+  .aboutpage .about-team .bios .bio-person .info .name {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 10px; }
-  .aboutpage .bios .bio-person .info .title {
+    margin-bottom: 10px;
+    font-family: "Arvo", cursive; }
+  .aboutpage .about-team .bios .bio-person .info .title {
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px; }
-  .aboutpage .bios .bio-person .info .bio-p {
+  .aboutpage .about-team .bios .bio-person .info .bio-p {
     margin-bottom: 30px; }
-  .aboutpage .bios .bio-person .info .contact p, .aboutpage .bios .bio-person .info .contact a {
+  .aboutpage .about-team .bios .bio-person .info .contact p, .aboutpage .about-team .bios .bio-person .info .contact a {
     margin-bottom: 7px;
     font-size: 1rem; }
-  .aboutpage .bios .bio-person .info .contact .phone-email {
+  .aboutpage .about-team .bios .bio-person .info .contact .phone-email {
     display: flex;
     flex-direction: row;
     justify-content: center; }
-    .aboutpage .bios .bio-person .info .contact .phone-email .phone {
+    .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone {
       width: 50%;
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-bottom: 5px; }
-      .aboutpage .bios .bio-person .info .contact .phone-email .phone i {
+      .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone i {
         padding-top: 3px;
         margin-right: 5px;
         color: #5f7470; }
-      .aboutpage .bios .bio-person .info .contact .phone-email .phone a {
+      .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone a {
         margin-bottom: 0;
         color: #6198b7; }
-      .aboutpage .bios .bio-person .info .contact .phone-email .phone p {
+      .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone p {
         display: none; }
       @media screen and (min-width: 500px) {
-        .aboutpage .bios .bio-person .info .contact .phone-email .phone p {
+        .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone p {
           display: block;
           color: #6198b7; }
-        .aboutpage .bios .bio-person .info .contact .phone-email .phone a {
+        .aboutpage .about-team .bios .bio-person .info .contact .phone-email .phone a {
           display: none; } }
-    .aboutpage .bios .bio-person .info .contact .phone-email .email {
+    .aboutpage .about-team .bios .bio-person .info .contact .phone-email .email {
       width: 50%;
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-bottom: 5px; }
-      .aboutpage .bios .bio-person .info .contact .phone-email .email i {
+      .aboutpage .about-team .bios .bio-person .info .contact .phone-email .email i {
         padding-top: 3px;
         margin-right: 5px;
         color: #5f7470; }
-      .aboutpage .bios .bio-person .info .contact .phone-email .email a {
+      .aboutpage .about-team .bios .bio-person .info .contact .phone-email .email a {
         color: #6198b7; }
 
 .page-hood {
@@ -210,6 +244,69 @@ nav {
     margin: 0 auto; }
     .searchpage .idx-box .widget_ihomefinderquicksearchwidget h4 {
       text-align: center; }
+
+.buypage .blackbox {
+  background-color: #6198b7;
+  min-height: 70px; }
+  .buypage .blackbox .heading {
+    color: #f0f1ee;
+    font-family: "Arvo", cursive;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+.buypage .buy-hero {
+  margin-bottom: 70px;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2)), url("http://localhost/dwell-local/wp-content/uploads/2017/05/meeting-full.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  background-position: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .buypage .buy-hero .hero-heading {
+    font-size: 2rem;
+    font-family: "Arvo", cursive;
+    text-align: center;
+    margin-bottom: 50px; }
+  .buypage .buy-hero .buy-cta-wrap {
+    margin-bottom: 20px; }
+    .buypage .buy-hero .buy-cta-wrap a {
+      display: block;
+      margin: 0 auto;
+      text-decoration: none;
+      max-width: 300px;
+      color: red; }
+      .buypage .buy-hero .buy-cta-wrap a .buy-cta {
+        margin: 0 auto;
+        border: 2px solid #6198b7;
+        border-radius: 4px;
+        font-weight: 400;
+        width: 80%;
+        max-width: 300px;
+        color: white;
+        background: #6198b7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .buypage .buy-hero .buy-cta-wrap a .buy-cta p {
+          padding: 12px;
+          text-align: center; }
+.buypage .buy-blurb {
+  width: 80%;
+  margin: 0 auto 70px; }
+  .buypage .buy-blurb p:first-child {
+    text-align: center;
+    font-family: "Arvo", cursive;
+    font-size: 1.5rem;
+    margin-bottom: 25px; }
+.buypage .buy-pdf {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #5f7470; }
+  .buypage .buy-pdf img {
+    width: 100%; }
 
 #content .blogpage {
   padding-top: 30px; }
