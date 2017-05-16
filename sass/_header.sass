@@ -7,12 +7,10 @@
 // $offwhite
 
 nav
-  // border: 1px solid $nickel
   background-color: $cadetblue
-  // overflow: hidden
 
   .nav-wrap
-    padding: 20px 5px
+    padding: 5px
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -27,12 +25,36 @@ nav
         margin: 0 auto
 
     .nav-links
-      // border: 1px solid $cadetblue
-      padding: 10px
       display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: space-around
+      flex-direction: column
+      justify-content: space-between
 
-      .nav-link-page
-        margin: 10px
+      .social-links
+        align-self: flex-end
+
+
+        a
+          color: $offwhite
+          transition: 0.2s
+
+          i
+
+        a:first-child:hover,a:first-child:active
+          // facebook
+          color: #3b5998
+          transition: 0.2s
+
+        a:nth-child(2):hover, a:nth-child(2):active
+          // twitter
+          color: #00aced
+          transition: 0.2s
+
+        a:nth-child(3):hover, a:nth-child(3):active
+          // pinterest
+          color: #cb2027
+          transition: 0.2s
+
+        a:nth-child(4):hover, a:nth-child(4):active
+          // linkedin
+          color: #007bb6
+          transition: 0.2s

@@ -10,9 +10,6 @@ get_header();
 ?>
 
 <div class="buypage">
-  <!-- <div class="blackbox">
-    <p class='heading'>Buying a Home in Nashville</p>
-  </div> -->
   <div class="buy-hero">
     <p class="hero-heading">Buying a Home in Nashville?</p>
     <div class="buy-cta-wrap">
@@ -33,13 +30,14 @@ get_header();
     </p>
   </div>
 
-
-
   <div class="buy-pdf">
     <img src="http://localhost/dwell-local/wp-content/uploads/2017/04/dwell_buyer_roadmap.jpg" alt="Seller Roadmap PDF">
   </div>
 
-  <!-- make link for pdf to allow download ___ http://localhost/dwell-local/wp-content/uploads/2017/04/dwell_buyer_roadmap.pdf -->
+  <div class="buy-download">
+    <a href="http://localhost/dwell-local/wp-content/uploads/2017/04/dwell_buyer_roadmap.jpg">Download</a>
+  </div>
+
 </div>
 
 

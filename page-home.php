@@ -36,6 +36,14 @@ get_header();
     </div>
   </div>
 
+  <div class="map-wrap">
+    <p>Learn about Nashville</p>
+    <p>Use our interactive map to learn about Nashville's most popular neighborhoods</p>
+    <div class="map">
+      <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
+    </div>
+  </div>
+
   <div class="testimonials">
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('testimony_slider')) : else : ?>
 
@@ -46,9 +54,7 @@ get_header();
     <?php echo do_shortcode('[instagram-feed]') ?>
   </div>
 
-  <div class="map-wrap">
-    <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
-  </div>
+
 </div>
 
 <?php get_footer(); ?>

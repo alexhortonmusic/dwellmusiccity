@@ -5,6 +5,7 @@
     <!-- IMAGE HEAVY BLOG LOOK -->
     <!-- Use small blurbs for each post on main page -->
     <?php if (have_posts()) : ?>
+      <div class="posts">
       <?php while (have_posts()) : the_post(); ?>
         <?php
         if (has_post_thumbnail()) {
@@ -13,7 +14,6 @@
         }
         ?>
 
-        <div class="posts">
           <?php if ( is_home() ) { ?>
             <div class="fullpost-multi" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(' <?php echo $thumbnail_url ?> ');">
               <?php } else { ?>

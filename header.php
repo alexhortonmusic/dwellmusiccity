@@ -19,6 +19,12 @@
         <img src="http://localhost/dwell-local/wp-content/uploads/2017/05/Dwell-logo.png" alt="Dwell Logo">
       </div>
       <div class='nav-links'>
+        <div class="social-links">
+          <a href="https://www.facebook.com/dwellmusiccity"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/dwellmusiccity"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com/dwellmusic/"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company-beta/3884770/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
         <!-- mega-menu plugin -->
         <?php wp_nav_menu( array( 'theme_location' => 'max_mega_menu_1' ) ); ?>
       </div>
