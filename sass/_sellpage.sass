@@ -5,3 +5,85 @@
 // $ashgrey
 // $nickel
 // $offwhite
+
+.sellpage
+
+  .sell-hero
+    margin-bottom: 70px
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 250px
+    background-position: cover
+
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    .hero-heading
+      font-size: 2rem
+      font-family: 'Arvo', cursive
+      text-align: center
+      margin-bottom: 50px
+      color: $offwhite
+
+
+    .sell-cta-wrap
+      margin-bottom: 20px
+
+
+      a
+        display: block
+        margin: 0 auto
+        text-decoration: none
+        max-width: 300px
+        // height: 50px
+
+        .sell-cta
+          margin: 0 auto
+          border: 2px solid $offwhite
+          border-radius: 4px
+          font-weight: 400
+          width: 80%
+          max-width: 300px
+          color: white
+          background: $cadetblue
+          display: flex
+          flex-direction: column
+          justify-content: center
+
+          p
+            padding: 12px
+            text-align: center
+
+        .sell-cta:hover, .sell-cta:active
+        color: red
+
+  .sell-blurb
+    width: 80%
+    margin: 0 auto 70px
+
+    p:first-child
+      text-align: center
+      font-family: 'Arvo', cursive
+      font-size: 1.5rem
+      margin-bottom: 25px
+
+    p:nth-child(2)
+
+  .sell-pdf
+    width: 90%
+    margin: 0 auto
+    border: 1px solid $nickel
+
+    img
+      width: 100%
+
+  .sell-download
+    width: 100px
+    margin: 10px auto
+
+    a
+      color: $cadetblue
+      display: block
+      text-align: center
