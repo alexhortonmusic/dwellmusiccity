@@ -51,6 +51,7 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/05/batman-nashville.jpg");
     background-size: cover;
     min-height: 300px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
@@ -92,14 +93,13 @@ nav {
         color: #f69a2b;
         transition: 0.2s; }
   .homepage .idx-video-wrap {
-    padding-top: 20px;
     margin-bottom: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
     .homepage .idx-video-wrap .idx-box {
-      margin: 0 25px 40px; }
+      margin: 0 25px 80px; }
       .homepage .idx-video-wrap .idx-box .widget_ihomefinderquicksearchwidget {
         background: #6198b7;
         border-radius: 4px;
@@ -140,15 +140,27 @@ nav {
     margin: 0 auto; }
     .homepage .testimonials .widget {
       padding: 30px 0; }
-  .homepage .insta-feed {
-    background-color: #6198b7; }
-    .homepage .insta-feed #sb_instagram {
-      padding: 30px 0; }
-      .homepage .insta-feed #sb_instagram .sb_instagram_header .sbi_header_link .sbi_header_text {
-        color: #f0f1ee; }
+  .homepage .insta-feed #sb_instagram {
+    padding: 30px 0; }
+    .homepage .insta-feed #sb_instagram .sb_instagram_header .sbi_header_link .sbi_header_text {
+      color: black; }
+    .homepage .insta-feed #sb_instagram #sbi_load .sbi_load_btn {
+      background: #5f7470; }
+    .homepage .insta-feed #sb_instagram #sbi_load .sbi_follow_btn a {
+      background-color: #6198b7; }
   .homepage .map-wrap {
-    max-width: 1000px;
-    margin: 0 auto; }
+    margin-bottom: 30px; }
+    .homepage .map-wrap p:first-child {
+      text-align: center;
+      font-family: "Arvo", cursive;
+      font-size: 1.5rem; }
+    .homepage .map-wrap p:nth-child(2) {
+      width: 90%;
+      margin: 10px auto 20px;
+      text-align: center; }
+    .homepage .map-wrap .map {
+      max-width: 1000px;
+      margin: 0 auto; }
 
 .aboutpage .about-team .title {
   font-family: "Arvo", cursive;

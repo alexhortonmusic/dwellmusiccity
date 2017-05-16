@@ -13,6 +13,7 @@
     background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/05/batman-nashville.jpg')
     background-size: cover
     min-height: 300px
+    margin-bottom: 60px
     display: flex
     flex-direction: column
     justify-content: space-around
@@ -71,7 +72,6 @@
 
 
   .idx-video-wrap
-    padding-top: 20px
     margin-bottom: 65px
     display: flex
     flex-direction: row
@@ -80,7 +80,7 @@
 
 
     .idx-box
-      margin: 0 25px 40px
+      margin: 0 25px 80px
 
       // -----   this is the quick search widget ------- //
 
@@ -137,7 +137,7 @@
       padding: 30px 0
 
   .insta-feed
-    background-color: $cadetblue
+    // background-color: $cadetblue
 
     #sb_instagram
       padding: 30px 0
@@ -147,12 +147,34 @@
         .sbi_header_link
 
           .sbi_header_text
-            color: $offwhite
+            color: black
 
             h3
 
             p.sbi_bio
 
+      #sbi_load
+
+        .sbi_load_btn
+          background: $nickel
+
+        .sbi_follow_btn a
+          background-color: $cadetblue
+
+
   .map-wrap
-    max-width: 1000px
-    margin: 0 auto
+    margin-bottom: 30px
+
+    p:first-child
+      text-align: center
+      font-family: 'Arvo', cursive
+      font-size: 1.5rem
+
+    p:nth-child(2)
+      width: 90%
+      margin: 10px auto 20px
+      text-align: center
+
+    .map
+      max-width: 1000px
+      margin: 0 auto

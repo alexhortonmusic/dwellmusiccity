@@ -37,7 +37,11 @@ get_header();
   </div>
 
   <div class="map-wrap">
-    <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
+    <p>Learn about Nashville</p>
+    <p>Use our interactive map to learn about Nashville's most popular neighborhoods</p>
+    <div class="map">
+      <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
+    </div>
   </div>
 
   <div class="testimonials">
