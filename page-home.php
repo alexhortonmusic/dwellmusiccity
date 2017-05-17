@@ -30,8 +30,19 @@ get_header();
 
     </div>
     <div class="video-box-wrap">
-      <div class="video-box">
-        <iframe src="https://player.vimeo.com/video/148142207" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="vimeo-cover-wrap">
+        <div class="heading">
+          <p>Wanna buy a home, and don't know where to start?</p>
+          <div class="chevron">
+            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- <div class="video-box">
+          <iframe src="https://player.vimeo.com/video/148142207?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div> -->
+        <div class='vimeo-cover'>
+          <img id='homepage-video-cover' src="http://localhost/dwell-local/wp-content/uploads/2017/05/dwellvimeo.playbutton-03.png" alt="">
+        </div>
       </div>
     </div>
   </div>

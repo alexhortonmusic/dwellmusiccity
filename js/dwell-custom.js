@@ -85,7 +85,7 @@
     bios.append(personalInfo)
   }
 
-  // ----- Calls to Actions buttons -----
+  // ----- Calls to Actions buttons ----- //
 
   $('.cta-home').hover(
     function() {
@@ -97,5 +97,22 @@
       $('.cta-home a').removeClass('cta-home-hover')
     }
   )
+
+  // --------- Vimeo Video covers -------- //
+
+
+  let homepageCover = $('#homepage-video-cover')
+
+  homepageCover.click(function() {
+    $('.vimeo-cover').addClass('video-hide')
+
+    // --- AUTOPLAY ONLY WORKS ON DESKTOP FOR NOW
+    $('.vimeo-cover-wrap').append(
+      `
+        <div class="video-box">
+          <iframe src="https://player.vimeo.com/video/148142207?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      `)
+  })
 
 })(jQuery)
