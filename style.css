@@ -288,31 +288,42 @@ nav {
   width: 80%;
   margin: 0 auto 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
-  .searchpage .featured-listings .listing {
-    background-size: cover;
-    height: 200px;
-    margin-bottom: 20px; }
-    .searchpage .featured-listings .listing p {
-      color: white; }
-  .searchpage .featured-listings .listing-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg"); }
-  .searchpage .featured-listings .listing-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse2.jpg"); }
-  .searchpage .featured-listings .listing-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse3.jpg"); }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .searchpage .featured-listings a {
+    overflow: hidden;
+    width: 100%;
+    min-width: 260px;
+    max-width: 360px;
+    margin: 0 15px; }
+    .searchpage .featured-listings a .listing {
+      background-size: cover !important;
+      height: 220px;
+      width: 100%;
+      margin-bottom: 20px; }
+      .searchpage .featured-listings a .listing p {
+        color: white; }
 .searchpage .idx-box {
   margin: 0 25px 40px; }
   .searchpage .idx-box .widget_ihomefinderquicksearchwidget {
-    border: 1px solid red;
+    background: #6198b7;
+    border-radius: 4px;
     padding: 10px;
     width: 70%;
     min-width: 300px;
     max-width: 420px;
     margin: 0 auto; }
     .searchpage .idx-box .widget_ihomefinderquicksearchwidget h4 {
-      text-align: center; }
+      text-align: center;
+      color: #f0f1ee;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-family: "Arvo", cursive; }
+    .searchpage .idx-box .widget_ihomefinderquicksearchwidget label.field-label {
+      color: #f0f1ee; }
+    .searchpage .idx-box .widget_ihomefinderquicksearchwidget #ihf-quicksearch-submit2 {
+      background-color: #f69a2b; }
 
 .buypage .buy-hero {
   margin-bottom: 70px;

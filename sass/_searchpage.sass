@@ -12,26 +12,26 @@
     width: 80%
     margin: 0 auto 40px
     display: flex
-    flex-direction: column
-    justify-content: space-around
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
 
+    a
+      overflow: hidden
+      width: 100%
+      min-width: 260px
+      max-width: 360px
+      margin: 0 15px
 
-    .listing
-      background-size: cover
-      height: 200px
-      margin-bottom: 20px
+      .listing
+        background-size: cover !important
+        height: 220px
+        width: 100%
+        margin-bottom: 20px
 
-      p
-        color: white
+        p
+          color: white
 
-    .listing-1
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg')
-
-    .listing-2
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse2.jpg')
-
-    .listing-3
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse3.jpg')
 
   .idx-box
     margin: 0 25px 40px
@@ -39,7 +39,8 @@
     // -----   this is the quick search widget ------- //
 
     .widget_ihomefinderquicksearchwidget
-      border: 1px solid red
+      background: $cadetblue
+      border-radius: 4px
       padding: 10px
       width: 70%
       min-width: 300px
@@ -48,3 +49,13 @@
 
       h4
         text-align: center
+        color: $offwhite
+        font-size: 1.3rem
+        margin-bottom: 15px
+        font-family: 'Arvo', cursive
+
+      label.field-label
+        color: $offwhite
+
+      #ihf-quicksearch-submit2
+        background-color: $orange

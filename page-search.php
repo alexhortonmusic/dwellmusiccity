@@ -13,18 +13,7 @@ get_header();
 
 <div class="searchpage">
   <div class="featured-listings">
-    <div class="listing listing-1">
-      <p>Price</p>
-      <p>Address</p>
-    </div>
-    <div class="listing listing-2">
-      <p>Price</p>
-      <p>Address</p>
-    </div>
-    <div class="listing listing-3">
-      <p>Price</p>
-      <p>Address</p>
-    </div>
+
   </div>
   <div class="idx-box">
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('search_page')) : else : ?>
