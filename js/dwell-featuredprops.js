@@ -7,7 +7,7 @@
   const baseURL = 'http://localhost/dwell-local'
 
   // ----- populate featured listings ------- //
-  let featuredListings = $('.featured-listings')
+  let featuredListings = $('.featured-listings-list')
 
   $.ajax({
     data: 'json',

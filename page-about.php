@@ -11,6 +11,9 @@ get_header();
 
 <!-- About Dwell, and then Bios -->
 <div class="aboutpage">
+  <div class="pagename">
+    <p>Home &nbsp; > &nbsp;  About Dwell Music City</p>
+  </div>
 
   <div class="about-dwell">
     <p>

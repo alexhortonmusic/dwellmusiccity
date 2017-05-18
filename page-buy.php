@@ -10,6 +10,9 @@ get_header();
 ?>
 
 <div class="buypage">
+  <div class="pagename">
+    <p>Home &nbsp; > &nbsp;  Buy a Home</p>
+  </div>
   <div class="buy-hero">
     <p class="hero-heading">Buying a Home in Nashville?</p>
     <div class="buy-cta-wrap">

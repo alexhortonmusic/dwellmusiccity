@@ -8,29 +8,52 @@
 
 .searchpage
 
+  .search-hero
+    background: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0, 0.4)), url('http://localhost/dwell-local/wp-content/uploads/2017/05/ipad.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100%
+    min-height: 220px
+
+    p
+      color: $offwhite
+      font-size: 1.6rem
+      font-family: 'Arvo', cursive
+      width: 50%
+      margin-left: 15px
+      padding-top: 20px
+
   .featured-listings
-    width: 80%
-    margin: 0 auto 40px
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: space-between
 
-    a
-      overflow: hidden
-      width: 100%
-      min-width: 260px
-      max-width: 360px
-      margin: 0 15px
+    .heading
+      font-family: 'Arvo', cursive
+      text-align: center
+      margin: 60px 0 20px
 
-      .listing
-        background-size: cover !important
-        height: 220px
+    .featured-listings-list
+      width: 80%
+      margin: 0 auto 20px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+
+      a
+        overflow: hidden
         width: 100%
-        margin-bottom: 20px
+        min-width: 260px
+        max-width: 320px
+        margin: 0 15px
 
-        p
-          color: white
+        .listing
+          background-size: cover !important
+          height: 220px
+          width: 100%
+          margin-bottom: 20px
+          border-radius: 5px
+
+          p
+            color: white
 
 
   .idx-box
@@ -43,7 +66,7 @@
       border-radius: 4px
       padding: 10px
       width: 70%
-      min-width: 300px
+      min-width: 280px
       max-width: 420px
       margin: 0 auto
 

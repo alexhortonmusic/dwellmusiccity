@@ -9,11 +9,18 @@
 get_header();
 ?>
 
-<h1>SEARCH PAGE</h1>
-
 <div class="searchpage">
+  <div class="pagename">
+    <p>Home &nbsp; > &nbsp;  Search</p>
+  </div>
+  <div class="search-hero">
+    <p>Ready to find your dream home?</p>
+  </div>
   <div class="featured-listings">
+    <p class='heading'>Featured Listings</p>
+    <div class="featured-listings-list">
 
+    </div>
   </div>
   <div class="idx-box">
     <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('search_page')) : else : ?>
@@ -24,23 +31,23 @@ get_header();
   <!-- Map, Email Alerts, Search Form -->
   <!-- Featured Listings (build custom widget) -->
 
-  <div>
+  <div class="detail-btn btn">
     <a href="http://localhost/dwell-local/homes-for-sale-search/">
-      <div class="alerts-btn">
+      <div>
         Try a more detailed search
       </div>
     </a>
   </div>
-  <div>
+  <div class="alerts-btn btn">
     <a href="http://localhost/dwell-local/email-alerts/">
-      <div class="alerts-btn">
+      <div>
         Get email alerts based on your search
       </div>
     </a>
   </div>
-  <div>
+  <div class="map-btn btn">
     <a href="	http://localhost/dwell-local/homes-for-sale-map-search/">
-      <div class="alerts-btn">
+      <div>
         Maybe a map search?
       </div>
     </a>

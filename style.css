@@ -8,6 +8,14 @@ body {
   font-weight: 300;
   background: #f0f1ee; }
 
+.pagename {
+  background: white; }
+  .pagename p {
+    text-align: center;
+    padding: 3px 0;
+    font-size: 0.8rem;
+    color: #b8bdb5; }
+
 nav {
   background-color: #6198b7; }
   nav .nav-wrap {
@@ -284,25 +292,43 @@ nav {
       .page-hood .page-wrap .hood-extras .restaurants div ul, .page-hood .page-wrap .hood-extras .attractions div ul, .page-hood .page-wrap .hood-extras .shopping div ul, .page-hood .page-wrap .hood-extras .housing div ul {
         list-style: none; }
 
-.searchpage .featured-listings {
+.searchpage .search-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://localhost/dwell-local/wp-content/uploads/2017/05/ipad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 220px; }
+  .searchpage .search-hero p {
+    color: #f0f1ee;
+    font-size: 1.6rem;
+    font-family: "Arvo", cursive;
+    width: 50%;
+    margin-left: 15px;
+    padding-top: 20px; }
+.searchpage .featured-listings .heading {
+  font-family: "Arvo", cursive;
+  text-align: center;
+  margin: 60px 0 20px; }
+.searchpage .featured-listings .featured-listings-list {
   width: 80%;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  .searchpage .featured-listings a {
+  justify-content: space-around; }
+  .searchpage .featured-listings .featured-listings-list a {
     overflow: hidden;
     width: 100%;
     min-width: 260px;
-    max-width: 360px;
+    max-width: 320px;
     margin: 0 15px; }
-    .searchpage .featured-listings a .listing {
+    .searchpage .featured-listings .featured-listings-list a .listing {
       background-size: cover !important;
       height: 220px;
       width: 100%;
-      margin-bottom: 20px; }
-      .searchpage .featured-listings a .listing p {
+      margin-bottom: 20px;
+      border-radius: 5px; }
+      .searchpage .featured-listings .featured-listings-list a .listing p {
         color: white; }
 .searchpage .idx-box {
   margin: 0 25px 40px; }
@@ -311,7 +337,7 @@ nav {
     border-radius: 4px;
     padding: 10px;
     width: 70%;
-    min-width: 300px;
+    min-width: 280px;
     max-width: 420px;
     margin: 0 auto; }
     .searchpage .idx-box .widget_ihomefinderquicksearchwidget h4 {
