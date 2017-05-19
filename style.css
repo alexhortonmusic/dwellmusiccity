@@ -6,7 +6,15 @@
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 300;
-  background: #f0f1ee; }
+  background: #e8e9e5; }
+
+.pagename {
+  background: white; }
+  .pagename p {
+    text-align: center;
+    padding: 3px 0;
+    font-size: 0.8rem;
+    color: #b8bdb5; }
 
 nav {
   background-color: #6198b7; }
@@ -22,6 +30,9 @@ nav {
       nav .nav-wrap .logo-header img {
         width: 200px;
         margin: 0 auto; }
+      @media screen and (max-width: 360px) {
+        nav .nav-wrap .logo-header img {
+          width: 160px; } }
     nav .nav-wrap .nav-links {
       display: flex;
       flex-direction: column;
@@ -29,7 +40,7 @@ nav {
       nav .nav-wrap .nav-links .social-links {
         align-self: flex-end; }
         nav .nav-wrap .nav-links .social-links a {
-          color: #f0f1ee;
+          color: #e8e9e5;
           transition: 0.2s; }
         nav .nav-wrap .nav-links .social-links a:first-child:hover, nav .nav-wrap .nav-links .social-links a:first-child:active {
           color: #3b5998;
@@ -70,7 +81,7 @@ nav {
       width: 250px;
       height: 45px;
       margin: 0 auto 30px;
-      border: 2px solid #f0f1ee;
+      border: 2px solid #e8e9e5;
       border-radius: 20px;
       transition: 0.2s;
       display: flex;
@@ -81,11 +92,11 @@ nav {
         text-align: center;
         text-decoration: none;
         line-height: 100%;
-        color: #f0f1ee;
+        color: #e8e9e5;
         font-size: 1.2rem; }
     .homepage .splash .cta-home:hover,
     .homepage .splash .cta-home:active {
-      background-color: #f0f1ee;
+      background-color: #e8e9e5;
       transition: 0.2s; }
       .homepage .splash .cta-home:hover .cta-home-hover,
       .homepage .splash .cta-home:active .cta-home-hover {
@@ -109,11 +120,11 @@ nav {
         margin: 0 auto; }
         .homepage .idx-video-wrap .idx-box .widget_ihomefinderquicksearchwidget h4 {
           text-align: center;
-          color: #f0f1ee;
+          color: #e8e9e5;
           font-size: 1.5rem;
           margin-bottom: 15px; }
         .homepage .idx-video-wrap .idx-box .widget_ihomefinderquicksearchwidget label.field-label {
-          color: #f0f1ee; }
+          color: #e8e9e5; }
         .homepage .idx-video-wrap .idx-box .widget_ihomefinderquicksearchwidget #ihf-quicksearch-submit2 {
           background-color: #b8bdb5; }
     .homepage .idx-video-wrap .video-box-wrap {
@@ -284,35 +295,120 @@ nav {
       .page-hood .page-wrap .hood-extras .restaurants div ul, .page-hood .page-wrap .hood-extras .attractions div ul, .page-hood .page-wrap .hood-extras .shopping div ul, .page-hood .page-wrap .hood-extras .housing div ul {
         list-style: none; }
 
-.searchpage .featured-listings {
+.searchpage .search-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://localhost/dwell-local/wp-content/uploads/2017/05/ipad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 220px; }
+  .searchpage .search-hero p {
+    color: #e8e9e5;
+    font-size: 1.6rem;
+    font-family: "Arvo", cursive;
+    width: 50%;
+    margin-left: 15px;
+    padding-top: 20px; }
+.searchpage .featured-listings .heading {
+  font-family: "Arvo", cursive;
+  text-align: center;
+  margin: 60px 0 20px; }
+.searchpage .featured-listings .featured-listings-list {
   width: 80%;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around; }
-  .searchpage .featured-listings .listing {
-    background-size: cover;
-    height: 200px;
-    margin-bottom: 20px; }
-    .searchpage .featured-listings .listing p {
-      color: white; }
-  .searchpage .featured-listings .listing-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg"); }
-  .searchpage .featured-listings .listing-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse2.jpg"); }
-  .searchpage .featured-listings .listing-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse3.jpg"); }
+  .searchpage .featured-listings .featured-listings-list a {
+    overflow: hidden;
+    width: 100%;
+    min-width: 260px;
+    max-width: 320px;
+    margin: 0 15px; }
+    .searchpage .featured-listings .featured-listings-list a .listing {
+      background-size: cover !important;
+      height: 220px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 5px; }
+      .searchpage .featured-listings .featured-listings-list a .listing p {
+        color: white; }
+.searchpage .ready {
+  background-color: #b8bdb5;
+  margin-bottom: 40px;
+  background-size: cover;
+  color: #e8e9e5; }
+  .searchpage .ready .heading {
+    font-size: 1.7rem;
+    font-family: "Arvo", cursive;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  .searchpage .ready .chevron {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px; }
 .searchpage .idx-box {
   margin: 0 25px 40px; }
   .searchpage .idx-box .widget_ihomefinderquicksearchwidget {
-    border: 1px solid red;
+    background: #6198b7;
+    border-radius: 4px;
     padding: 10px;
     width: 70%;
-    min-width: 300px;
+    min-width: 280px;
     max-width: 420px;
     margin: 0 auto; }
     .searchpage .idx-box .widget_ihomefinderquicksearchwidget h4 {
-      text-align: center; }
+      text-align: center;
+      color: #e8e9e5;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      font-family: "Arvo", cursive; }
+    .searchpage .idx-box .widget_ihomefinderquicksearchwidget label.field-label {
+      color: #e8e9e5; }
+    .searchpage .idx-box .widget_ihomefinderquicksearchwidget #ihf-quicksearch-submit2 {
+      background-color: #f69a2b; }
+.searchpage .search-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .searchpage .search-btns .btn {
+    align-self: center;
+    width: 260px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .searchpage .search-btns .btn a {
+      display: block;
+      line-height: 100%;
+      text-decoration: none;
+      text-align: center;
+      color: #e8e9e5; }
+  .searchpage .search-btns .detail-btn {
+    background-color: #6198b7;
+    transition: 0.2s; }
+  .searchpage .search-btns .detail-btn:hover, .searchpage .search-btns .detail-btn:active {
+    background-color: #3e719c;
+    transition: 0.2s; }
+  .searchpage .search-btns .alert-btn {
+    background-color: #48ba37;
+    transition: 0.2s; }
+  .searchpage .search-btns .alert-btn:hover, .searchpage .search-btns .alert-btn:active {
+    background-color: #39932b;
+    transition: 0.2s; }
+  .searchpage .search-btns .map-btn {
+    border: 1px solid black;
+    transition: 0.2s; }
+    .searchpage .search-btns .map-btn a {
+      color: black; }
+  .searchpage .search-btns .map-btn:hover, .searchpage .search-btns .map-btn:active {
+    background-color: #d2d4c8;
+    transition: 0.2s; }
 
 .buypage .buy-hero {
   margin-bottom: 70px;
@@ -339,7 +435,7 @@ nav {
       color: red; }
       .buypage .buy-hero .buy-cta-wrap a .buy-cta {
         margin: 0 auto;
-        border: 2px solid #f0f1ee;
+        border: 2px solid #e8e9e5;
         border-radius: 4px;
         font-weight: 400;
         width: 80%;
@@ -382,7 +478,7 @@ nav {
     font-family: "Arvo", cursive;
     text-align: center;
     margin-bottom: 50px;
-    color: #f0f1ee; }
+    color: #e8e9e5; }
   .sellpage .sell-hero .sell-cta-wrap {
     margin-bottom: 20px; }
     .sellpage .sell-hero .sell-cta-wrap a {
@@ -393,7 +489,7 @@ nav {
       color: red; }
       .sellpage .sell-hero .sell-cta-wrap a .sell-cta {
         margin: 0 auto;
-        border: 2px solid #f0f1ee;
+        border: 2px solid #e8e9e5;
         border-radius: 4px;
         font-weight: 400;
         width: 80%;
@@ -453,12 +549,12 @@ nav {
           text-align: left;
           margin-bottom: 0; }
           .blogpage .posts .fullpost-multi .postheader h2 a {
-            color: #f0f1ee; }
+            color: #e8e9e5; }
         .blogpage .posts .fullpost-multi .postheader small {
           color: #e0e2db;
           font-size: 0.5rem; }
       .blogpage .posts .fullpost-multi .multi-entry p {
-        color: #f0f1ee;
+        color: #e8e9e5;
         font-size: 0.8rem;
         padding: 0 15px; }
     .blogpage .posts .fullpost-single {

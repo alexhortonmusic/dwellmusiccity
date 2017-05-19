@@ -8,30 +8,75 @@
 
 .searchpage
 
+  .search-hero
+    background: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0, 0.4)), url('http://localhost/dwell-local/wp-content/uploads/2017/05/ipad.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100%
+    min-height: 220px
+
+    p
+      color: $offwhite
+      font-size: 1.6rem
+      font-family: 'Arvo', cursive
+      width: 50%
+      margin-left: 15px
+      padding-top: 20px
+
   .featured-listings
-    width: 80%
-    margin: 0 auto 40px
-    display: flex
-    flex-direction: column
-    justify-content: space-around
+
+    .heading
+      font-family: 'Arvo', cursive
+      text-align: center
+      margin: 60px 0 20px
+
+    .featured-listings-list
+      width: 80%
+      margin: 0 auto 20px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+
+      a
+        overflow: hidden
+        width: 100%
+        min-width: 260px
+        max-width: 320px
+        margin: 0 15px
+
+        .listing
+          background-size: cover !important
+          height: 220px
+          width: 100%
+          margin-bottom: 20px
+          border-radius: 5px
+
+          p
+            color: white
+
+  .ready
+    background-color: $ashgrey
+    margin-bottom: 40px
+    background-size: cover
+    color: $offwhite
 
 
-    .listing
-      background-size: cover
-      height: 200px
+    .heading
+      font-size: 1.7rem
+      font-family: 'Arvo', cursive
+      font-weight: 300
+      text-align: center
       margin-bottom: 20px
+      padding-top: 15px
 
-      p
-        color: white
 
-    .listing-1
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse.jpg')
+    .chevron
+      display: flex
+      flex-direction: row
+      justify-content: center
+      padding-bottom: 15px
 
-    .listing-2
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse2.jpg')
-
-    .listing-3
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://localhost/dwell-local/wp-content/uploads/2017/04/nicehouse3.jpg')
 
   .idx-box
     margin: 0 25px 40px
@@ -39,12 +84,78 @@
     // -----   this is the quick search widget ------- //
 
     .widget_ihomefinderquicksearchwidget
-      border: 1px solid red
+      background: $cadetblue
+      border-radius: 4px
       padding: 10px
       width: 70%
-      min-width: 300px
+      min-width: 280px
       max-width: 420px
       margin: 0 auto
 
       h4
         text-align: center
+        color: $offwhite
+        font-size: 1.3rem
+        margin-bottom: 15px
+        font-family: 'Arvo', cursive
+
+      label.field-label
+        color: $offwhite
+
+      #ihf-quicksearch-submit2
+        background-color: $orange
+
+
+  .search-btns
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+
+    .btn
+      align-self: center
+      // border: 1px solid black
+      width: 260px
+      height: 40px
+      border-radius: 6px
+      margin-bottom: 15px
+
+
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      a
+        display: block
+        line-height: 100%
+        text-decoration: none
+        text-align: center
+        color: $offwhite
+
+
+    .detail-btn
+      background-color: $cadetblue
+      transition: 0.2s
+
+    .detail-btn:hover, .detail-btn:active
+      background-color: $queenblue
+      transition: 0.2s
+
+    .alert-btn
+      background-color: #48ba37
+      transition: 0.2s
+
+    .alert-btn:hover, .alert-btn:active
+      background-color: #39932b
+      transition: 0.2s
+
+    .map-btn
+      border: 1px solid black
+      transition: 0.2s
+
+      a
+        color: black
+
+    .map-btn:hover, .map-btn:active
+      background-color: $pastelgray
+      transition: 0.2s

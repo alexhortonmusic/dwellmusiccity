@@ -1,0 +1,22 @@
+{
+  "featuredProps": [
+    {
+      "address": "225 Lake Hills Rd<br>Tullahoma, TN 37288",
+      "mainImg": "http://pix.idxre.com/pix/TNREALTRACS/main/0/1800293_0.jpg",
+      "price": "3,200,000",
+      "listingLink": "/homes-for-sale-details/225-LAKE-HILLS-RD-TULLAHOMA-TN-37388/1800293/61/"
+    },
+    {
+      "address": "2512 Belmont Blvd<br>Nashville, TN 37212",
+      "mainImg": "http://pix.idxre.com/pix/TNREALTRACS/main/0/1826032_0.jpg",
+      "price": "2,500,000",
+      "listingLink": "homes-for-sale-details/2512-BELMONT-BLVD-NASHVILLE-TN-37212/1826032/61/"
+    },
+    {
+      "address": "3800 Abbott Martin Rd<br>Nashville, TN 37215",
+      "mainImg": "http://pix.idxre.com/pix/TNREALTRACS/main/0/1823727_0.jpg",
+      "price": "1,650,000",
+      "listingLink": "homes-for-sale-details/3800-ABBOTT-MARTIN-RD-NASHVILLE-TN-37215/1823727/61/"
+    }
+  ]
+}

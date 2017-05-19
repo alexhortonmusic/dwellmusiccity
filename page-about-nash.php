@@ -8,9 +8,12 @@
 
 get_header();
 ?>
+<div class="aboutnashpage">
+  <div class="pagename">
+    <p>Home &nbsp; > &nbsp;  About Nashville</p>
+  </div>
 
-<h1>ABOUT NASHVILLE PAGE</h1>
-<p>Blurb about nashville</p>
+</div>
 
 <div class="map-wrap">
   <?php echo file_get_contents('http://localhost/dwell-local/wp-content/themes/dwell-custom/Dwell_Map.svg'); ?>
