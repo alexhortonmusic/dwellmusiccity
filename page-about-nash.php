@@ -8,9 +8,6 @@
 
 get_header();
 ?>
-
-<h1>ABOUT NASHVILLE PAGE</h1>
-<p>Blurb about nashville</p>
 <div class="aboutnashpage">
   <div class="pagename">
     <p>Home &nbsp; > &nbsp;  About Nashville</p>

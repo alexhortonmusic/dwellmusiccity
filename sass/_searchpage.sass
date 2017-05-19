@@ -55,6 +55,28 @@
           p
             color: white
 
+  .ready
+    background-color: $ashgrey
+    margin-bottom: 40px
+    background-size: cover
+    color: $offwhite
+
+
+    .heading
+      font-size: 1.7rem
+      font-family: 'Arvo', cursive
+      font-weight: 300
+      text-align: center
+      margin-bottom: 20px
+      padding-top: 15px
+
+
+    .chevron
+      display: flex
+      flex-direction: row
+      justify-content: center
+      padding-bottom: 15px
+
 
   .idx-box
     margin: 0 25px 40px
@@ -82,3 +104,58 @@
 
       #ihf-quicksearch-submit2
         background-color: $orange
+
+
+  .search-btns
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+
+    .btn
+      align-self: center
+      // border: 1px solid black
+      width: 260px
+      height: 40px
+      border-radius: 6px
+      margin-bottom: 15px
+
+
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+      a
+        display: block
+        line-height: 100%
+        text-decoration: none
+        text-align: center
+        color: $offwhite
+
+
+    .detail-btn
+      background-color: $cadetblue
+      transition: 0.2s
+
+    .detail-btn:hover, .detail-btn:active
+      background-color: $queenblue
+      transition: 0.2s
+
+    .alert-btn
+      background-color: #48ba37
+      transition: 0.2s
+
+    .alert-btn:hover, .alert-btn:active
+      background-color: #39932b
+      transition: 0.2s
+
+    .map-btn
+      border: 1px solid black
+      transition: 0.2s
+
+      a
+        color: black
+
+    .map-btn:hover, .map-btn:active
+      background-color: $pastelgray
+      transition: 0.2s
